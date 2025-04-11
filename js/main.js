@@ -45,7 +45,7 @@ document.getElementById('download-pdf').addEventListener('click', async () => {
       const lista = grupos[grupoKey];
       if (lista.length > 0) {
         pdf.setFontSize(14);
-        pdf.text(`🔸 ${nomesGrupos[grupoKey]}:`, 20, y);
+        pdf.text(`${nomesGrupos[grupoKey]}:`, 20, y);
         y += 10;
 
         lista.forEach((p, idx) => {
